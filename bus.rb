@@ -37,4 +37,10 @@ class Bus
         @passengers = []
     end
 
+    def pick_up_all(bus_stop, bus)
+        for person in bus_stop.queue()
+            bus.pick_up(person)
+        end
+    end
+
 end
